@@ -1,0 +1,39 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font: 500 100%/1.4 system-ui;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  transition: background-color 0.2s;
+}
+.card img {
+  max-width: 100%;
+  transition: scale 0.2s;
+}
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.card:hover img {
+  max-width: 100%;
+  scale: 1.05;
+}
